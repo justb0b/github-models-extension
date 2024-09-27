@@ -10,11 +10,7 @@ export class describeModel extends Tool {
       properties: {
         model: {
           type: "string",
-          description: [
-            'The model to describe. Looks like "model-name". For example, `Phi-3-medium-128k-instruct` or `gpt-4o`.',
-            'The list of models is available in the context window of the chat, in the `<-- LIST OF MODELS -->` section.',
-            'If the model name is not found in the list of models, pick the closest matching model from the list.',
-          ].join("\n"),
+          description: 'The model to describe. Looks like "model-name". For example, `Phi-3-medium-128k-instruct` or `gpt-4o`.',
         },
       },
       required: ["model"],
